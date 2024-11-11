@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/valid-anagram/
+// https://leetcode.com/problems/valid-anagram/ - 11/11/2024
 class Solution {
 public:
     bool isAnagram(string s, string t) {
@@ -11,7 +11,6 @@ public:
         for (int i=0; i<s.length(); i++) {
             s_map[s[i]] = s_map[s[i]] + 1;
             t_map[t[i]] = t_map[t[i]] + 1;
-            // cout << s[i] << t[i] <<"\n";
         }
 
         if (s_map.size() != t_map.size())
@@ -21,6 +20,8 @@ public:
             if (s_map[it->first] != t_map[it->first])
                 return false;
         }
+
+//        Trying to iterate through map
 //        for (int i=1; i<s_map.size()+1; i++) {
 //            if (s_map.at(i) != t_map.at(i))
 //                return false;
