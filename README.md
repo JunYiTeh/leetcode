@@ -1,2 +1,2 @@
-# leetcode
-Repo for my Leetcode submissions
+# LeetCode
+Repo for my LeetCode submissions
